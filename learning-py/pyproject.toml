@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "learning-py"
+version = "0.1.0"
+description = ""
+authors = ["Satsuki Akiba <anosatsuk124@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+jupyterlab = "^3.3.4"
+jupytext = "^1.13.8"
+jupyterlab-vim = "^0.15.1"
+jupyterlab-vimrc = "^0.5.2"
+jupyterlab-lsp = "^3.10.1"
+jedi-language-server = "^0.35.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
