@@ -16,3 +16,5 @@ image = "0.24.0"
 
 [profile.release]
 opt-level = "s"
+codegen-units = 1
+lto = true

@@ -5,14 +5,14 @@ skip_core_tasks = true
 cwd = "wasm-rs"
 script_runner = "@shell"
 script = """
-    wasm-pack build --target web -d ../pkg
+    wasm-pack build --target web -d ../pkg --release
 """
 
 [tasks.run]
 cwd = "wasm-rs"
 script_runner = "@shell"
 script = """
-    wasm-pack build --target web -d ../pkg
+    wasm-pack build --target web -d ../pkg --release
     yarn run dev
 """
 
