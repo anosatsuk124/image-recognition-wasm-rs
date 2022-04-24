@@ -1,0 +1,25 @@
+[config]
+skip_core_tasks = true
+
+[tasks.build]
+cwd = "wasm-rs"
+script_runner = "@shell"
+script = """
+    wasm-pack build --target web -d ../pkg
+"""
+
+[tasks.run]
+cwd = "wasm-rs"
+script_runner = "@shell"
+script = """
+    wasm-pack build --target web -d ../pkg
+    yarn run dev
+"""
+
+[tasks.clean]
+cwd = "wasm-rs"
+script_runner = "@shell"
+script = """
+    yarn run clean
+    cargo clean
+"""
